@@ -2,13 +2,13 @@
 #Script Variables
 
 #==============ovpn-udp===================
-if systemctl is-active openvpn@server >/dev/null 2>&1; then
+if systemctl is-active openvpn@server-udp >/dev/null 2>&1; then
     chkovpnudp="\e[1;32mON "
 else
     chkovpnudp="\e[1;31mOFF"
 fi
 #==============ovpn-tcp===================
-if systemctl is-active openvpn@server2 >/dev/null 2>&1; then
+if systemctl is-active openvpn@server-tcp >/dev/null 2>&1; then
     chkovpntcp="\e[1;32mON "
 else
     chkovpntcp="\e[1;31mOFF"
