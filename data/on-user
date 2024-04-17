@@ -94,34 +94,33 @@ if [ ! -f "$logfile" ]; then
 fi
 
 
-output=$(awk -F, '/OpenVPN CLIENT LIST/{p=1; next} p && /ROUTING TABLE/{p=0} p && !/OpenVPN CLIENT LIST|ROUTING TABLE/{if ($1 != "Common Name" && $1 != "Updated" && $1 != "UNDEF") print $1}' "$logfile" | sort | uniq -c)
+#!/bin/bash
 
-if [ -z "$output" ]; then
-    echo -e "\033[1;96m──────────────────────────────────\033[0m"
-    echo -e "\033[1;97m           USERS ONLINE           \E[0m"
-    echo -e "\033[1;96m──────────────────────────────────\033[0m"
-    echo -e "\033[1;91mNo users connected.\033[0m"
-echo -e "\033[1;96m──────────────────────────────────\033[0m"
-echo -e "\033[1;97m         SCRIPT BY ILYASS\033[0m"
-echo -e "\033[1;96m──────────────────────────────────\033[0m"
-read -n 1 -s -r -p "Press [ Enter ] to back on menu"
-menu
-
+magenta='\033[1;95m'
+white='\033[1;97m'
+yellow='\033[0;93m'
+NC='\033[0m'
+clear
+if [ -f "/etc/openvpn/server/openvpn-tcp.log" ]; then
+    echo ""
+    echo -e "${magenta}──────────[${NC} ${white}OpenVPN TCP User Login${NC} ${magenta}]──────────${NC}"
+    echo -e "${yellow}Username${NC} ${magenta} |${NC} ${yellow}      IP Address${NC} ${magenta}      |${NC}${yellow} ${yellow}Connected${NC}"
+    echo -e "${magenta}──────────────────────────────────────────────${NC}"
+    cat /etc/openvpn/server/openvpn-tcp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-tcp.txt
+    cat /tmp/vpn-login-tcp.txt
 fi
 
-echo -e "\033[1;96m──────────────────────────────────\033[0m"
-echo -e "\033[1;97m           USERS ONLINE           \E[0m"
-echo -e "\033[1;96m──────────────────────────────────\033[0m"
-while read -r line; do
-    count=$(echo "$line" | awk '{print $1}')
-    user=$(echo "$line" | awk '{print $2}')
-    if [ "$user" == "UNDEF" ]; then
-        user="Undefined"
-    fi
-    printf "\033[1;93m[%-3s] \033[0m\033[1;32m%-20s\033[0m\n" "$count" "$user"
-done <<< "$output"
-echo -e "\033[1;96m──────────────────────────────────\033[0m"
-echo -e "\033[1;97m         SCRIPT BY ILYASS\033[0m"
-echo -e "\033[1;96m──────────────────────────────────\033[0m"
+echo -e "${magenta}──────────────────────────────────────────────${NC}"
+
+if [ -f "/etc/openvpn/server/openvpn-udp.log" ]; then
+    echo " "
+    echo -e "${magenta}──────────[${NC}${white} OpenVPN UDP User Login${NC} ${magenta}]──────────${NC}"
+    echo -e "${yellow}Username${NC} ${magenta} |${NC} ${yellow}      IP Address${NC} ${magenta}      |${NC}${yellow} ${yellow}Connected${NC}"
+    echo -e "${magenta}──────────────────────────────────────────────${NC}"
+    cat /etc/openvpn/server/openvpn-udp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-udp.txt
+    cat /tmp/vpn-login-udp.txt
+fi
+
+echo -e "${magenta}──────────────────────────────────────────────${NC}"
 read -n 1 -s -r -p "Press [ Enter ] to back on menu"
 menu
