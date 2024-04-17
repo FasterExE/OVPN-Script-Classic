@@ -131,7 +131,7 @@ export LIGHT='\033[0;37m'
 export NC='\033[0m'
 clear
 echo -e "${BIPurple} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIPurple} │               ${BIWhite}${UWhite}ILYASS  OVPN-SCRIPT-Classic${NC}"
+echo -e "${BIPurple} │            ${BIWhite}${UWhite}ILYASS  OVPN-SCRIPT-CLASSIC${NC}"
 echo -e "${BIPurple} │"
 echo -e "${BIPurple} │  ${BIPurple}IP        :  ${BIYellow}$(curl -sS ifconfig.me)${NC}"
 echo -e "${BIPurple} │  ${BIPurple}DOMAIN    :  ${BIYellow}$(cat /etc/domain/d-domain)${NC}"
