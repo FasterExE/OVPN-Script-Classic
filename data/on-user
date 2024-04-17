@@ -85,7 +85,7 @@ else
 fi
 
 clear
-logfile="/etc/openvpn/server/udpclient.log"
+logfile="/etc/openvpn/server/openvpn-status.log"
 
 
 if [ ! -f "$logfile" ]; then
