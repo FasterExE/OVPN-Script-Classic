@@ -126,6 +126,14 @@ echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}7${DARK_ORANGE}]
 wget https://raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/main/data/install_stunnel.sh >/dev/null 2>&1
 bash install_stunnel.sh >/dev/null 2>&1
 rm install_stunnel.sh >/dev/null 2>&1
+echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}8${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL BBR${NO_COLOR}"
+wget https://raw.githubusercontent.com/FasterExE/OVPN-Script-V3/main/data/install_BBR.sh >/dev/null 2>&1
+bash install_BBR.sh >/dev/null 2>&1
+rm install_BBR.sh >/dev/null 2>&1
+echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}9${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL FIREWALL KVM${NO_COLOR}"
+wget https://raw.githubusercontent.com/FasterExE/OVPN-Script-V3/main/data/install_firewall_kvm.sh >/dev/null 2>&1
+bash install_firewall_kvm.sh >/dev/null 2>&1
+rm install_firewall_kvm.sh >/dev/null 2>&1
 echo -e "\033[1;36m──────────────────────────────────────────────────────────\033[0m"
 sleep 6
 clear
