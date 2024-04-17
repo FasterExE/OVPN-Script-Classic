@@ -90,7 +90,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
 # Link Hosting Kalian
-ovpnscriptclassicbyilyass="https://github.com/FasterExE/OVPN-Script-Classic/raw/main/data/vpn.zip"
+ovpnscriptclassicbyilyass="raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/raw/main/data"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
