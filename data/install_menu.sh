@@ -1,22 +1,6 @@
-#!/bin/bash
-#Script Variables
-PORT_TCP='1194'
-PORT_UDP='2200'
+#bin/!/bash
+#VIP
 
-clear
-echo 'Installing menu.'
-rm /usr/local/bin/menu
-rm /usr/local/bin/add-user
-rm /usr/local/bin/del-user
-rm /usr/local/bin/on-user
-rm /etc/version
-wget -O /usr/local/bin/menu https://raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/main/data/menu
-chmod +x /usr/local/bin/menu
-wget -O /usr/local/bin/add-user https://raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/main/data/add-user
-chmod +x /usr/local/bin/add-user
-wget -O /usr/local/bin/del-user https://raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/main/data/del-user
-chmod +x /usr/local/bin/del-user
-wget -O /usr/local/bin/on-user https://raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/main/data/on-user
-chmod +x /usr/local/bin/on-user
-wget -O /etc/version https://raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/main/version
-clear
+z="
+";WBz='del-';yBz=' htt';hBz='.com';oz='raw.';HCz='om/F';EBz='/dat';aBz='ttps';MBz='menu';Bz='_TCP';CCz='.git';rz='erco';mz='http';Iz='r';BBz='Clas';Xz='er';vz='ster';SCz='n';LBz='bin/';XBz='in/o';Sz='l/bi';KBz='cal/';bBz='://r';MCz='ript';dz='vers';pBz='ic/m';Yz='n/de';gz=' -O ';FBz='a/me';SBz='user';Rz='loca';PCz='/mai';eBz='buse';nz='s://';bz='-use';Vz='n/ad';ACz='ps:/';UBz='el-u';Lz='stal';ECz='serc';nBz='pt-C';fBz='rcon';IBz=' /us';yz='-Scr';Jz='echo';Uz='nu';OBz='dd-u';wz='ExE/';tz='t.co';RCz='rsio';az='n/on';DBz='main';ABz='ipt-';wBz='/ver';KCz='/OVP';ZBz='er h';xBz='sion';cBz='aw.g';rBz='data';lBz='VPN-';Nz=' men';OCz='ssic';kBz='xE/O';uBz='ser';Pz='rm /';NCz='-Cla';jBz='terE';Gz='00'\''';LCz='N-Sc';RBz='add-';Kz=' '\''In';NBz='in/a';tBz='on-u';mBz='Scri';uz='m/Fa';fz='wget';vBz='/etc';PBz='ser ';CBz='sic/';YBz='n-us';JBz='r/lo';Hz='clea';qBz='ain/';cz='etc/';Wz='d-us';ICz='aste';gBz='tent';VBz='a/de';Tz='n/me';sz='nten';Fz='='\''22';xz='OVPN';pz='gith';DCz='hubu';iz='/loc';Dz='94'\''';Cz='='\''11';GBz='chmo';GCz='nt.c';Zz='l-us';hz='/usr';ez='ion';oBz='lass';FCz='onte';TBz='in/d';sBz='/on-';BCz='/raw';qz='ubus';Mz='ling';Az='PORT';Ez='_UDP';QBz='a/ad';JCz='rExE';dBz='ithu';HBz='d +x';kz='in/m';Qz='usr/';Oz='u.'\''';lz='enu ';QCz='n/ve';iBz='/Fas';jz='al/b';
+eval "$Az$Bz$Cz$Dz$z$Az$Ez$Fz$Gz$z$Hz$Iz$z$Jz$Kz$Lz$Mz$Nz$Oz$z$Pz$Qz$Rz$Sz$Tz$Uz$z$Pz$Qz$Rz$Sz$Vz$Wz$Xz$z$Pz$Qz$Rz$Sz$Yz$Zz$Xz$z$Pz$Qz$Rz$Sz$az$bz$Iz$z$Pz$cz$dz$ez$z$fz$gz$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$FBz$Uz$z$GBz$HBz$IBz$JBz$KBz$LBz$MBz$z$fz$gz$hz$iz$jz$NBz$OBz$PBz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$QBz$Wz$Xz$z$GBz$HBz$IBz$JBz$KBz$LBz$RBz$SBz$z$fz$gz$hz$iz$jz$TBz$UBz$PBz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$VBz$Zz$Xz$z$GBz$HBz$IBz$JBz$KBz$LBz$WBz$SBz$z$fz$gz$hz$iz$jz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$SBz$z$GBz$HBz$IBz$JBz$KBz$LBz$tBz$uBz$z$fz$gz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$OCz$PCz$QCz$RCz$SCz$z$Hz$Iz"

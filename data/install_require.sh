@@ -1,15 +1,6 @@
-#!/bin/bash
-#Script Variables
-PORT_TCP='1194'
-PORT_UDP='2200'
+#bin/!/bash
+#VIP
 
-apt update
-apt install -y curl wget cron python-minimal libpython-stdlib
-apt install -y iptables
-apt install -y openvpn netcat neofetch vnstat
-apt install -y screen stunnel4 gnutls-bin python
-apt install -y nload
-apt install -y dos2unix nano unzip jq virt-what net-tools
-apt install -y mlocate dh-make libaudit-dev build-essential fail2ban
-apt-get -o Acquire::ForceIPv4=true install python dos2unix stunnel4 screen curl -y
-clear
+z="
+";gz='t ne';MBz='ibau';mz='cree';Rz='thon';ZBz='re::';az='ptab';cBz='4=tr';RBz='sent';fz='etca';pBz='r';nBz='-y';lz='-y s';hBz='s2un';dz='penv';Mz='-y c';dBz='ue i';nz='n st';wz='nix ';Sz='-min';VBz='apt-';Yz='b';rz='s-bi';aBz='Forc';Wz='on-s';pz='l4 g';uz='-y d';Az='PORT';ABz='ip j';hz='ofet';cz='-y o';Jz='te';Kz='inst';QBz='d-es';ez='pn n';OBz='dev ';oz='unne';tz='load';CBz='rt-w';sz='-y n';Fz='='\''22';kBz='el4 ';FBz='tool';bz='les';xz='nano';oBz='clea';kz='t';eBz='ll p';gBz='n do';NBz='dit-';KBz='h-ma';Hz='apt ';LBz='ke l';JBz='te d';WBz='get ';Pz=' cro';mBz='en c';Iz='upda';Dz='94'\''';GBz='s';yz=' unz';Vz='pyth';Xz='tdli';Cz='='\''11';Gz='00'\''';Ez='_UDP';HBz='-y m';XBz='-o A';TBz='fail';Bz='_TCP';vz='os2u';Oz='wget';iBz='ix s';EBz='net-';lBz='scre';SBz='ial ';DBz='hat ';Zz='-y i';jz='nsta';fBz='ytho';Qz='n py';PBz='buil';iz='ch v';Uz=' lib';Tz='imal';bBz='eIPv';UBz='2ban';Nz='url ';jBz='tunn';IBz='loca';qz='nutl';Lz='all ';BBz='q vi';YBz='cqui';
+eval "$Az$Bz$Cz$Dz$z$Az$Ez$Fz$Gz$z$Hz$Iz$Jz$z$Hz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$z$Hz$Kz$Lz$Zz$az$bz$z$Hz$Kz$Lz$cz$dz$ez$fz$gz$hz$iz$jz$kz$z$Hz$Kz$Lz$lz$mz$nz$oz$pz$qz$rz$Qz$Rz$z$Hz$Kz$Lz$sz$tz$z$Hz$Kz$Lz$uz$vz$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$FBz$GBz$z$Hz$Kz$Lz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$z$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$jz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$Nz$nBz$z$oBz$pBz"

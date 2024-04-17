@@ -1,30 +1,6 @@
-#!/bin/bash
+#bin/!/bash
+#VIP
 
-magenta='\033[1;95m'
-white='\033[1;97m'
-yellow='\033[0;93m'
-NC='\033[0m'
-clear
-if [ -f "/etc/openvpn/server/openvpn-tcp.log" ]; then
-    echo ""
-    echo -e "${magenta}──────────[${NC} ${white}OpenVPN TCP User Login${NC} ${magenta}]──────────${NC}"
-    echo -e "${yellow}Username${NC} ${magenta} |${NC} ${yellow}      IP Address${NC} ${magenta}      |${NC}${yellow} ${yellow}Connected${NC}"
-    echo -e "${magenta}──────────────────────────────────────────────${NC}"
-    cat /etc/openvpn/server/openvpn-tcp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-tcp.txt
-    cat /tmp/vpn-login-tcp.txt
-fi
-
-echo -e "${magenta}──────────────────────────────────────────────${NC}"
-
-if [ -f "/etc/openvpn/server/openvpn-udp.log" ]; then
-    echo " "
-    echo -e "${magenta}──────────[${NC}${white} OpenVPN UDP User Login${NC} ${magenta}]──────────${NC}"
-    echo -e "${yellow}Username${NC} ${magenta} |${NC} ${yellow}      IP Address${NC} ${magenta}      |${NC}${yellow} ${yellow}Connected${NC}"
-    echo -e "${magenta}──────────────────────────────────────────────${NC}"
-    cat /etc/openvpn/server/openvpn-udp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-udp.txt
-    cat /tmp/vpn-login-udp.txt
-fi
-
-echo -e "${magenta}──────────────────────────────────────────────${NC}"
-read -n 1 -s -r -p "Press [ Enter ] to back on menu"
-menu
+z="
+";Yz='n/se';NCz='xt';yBz=''\''s/,';JCz='/vpn';gBz='ver/';gCz='to b';bCz='-p "';hz='echo';lBz='| gr';Qz='[0m'\''';wz=' Log';FCz='n-lo';Bz='nta=';kCz='menu';LBz='} ${';tz='VPN ';Mz='\033';jCz='enu"';KBz='${NC';FBz='ello';OBz=' IP ';Jz='m'\''';oBz='CLIE';GCz='gin-';eBz='/etc';YBz=' ${y';JBz='a} |';Vz='"/et';DBz='C}"';tBz='d '\'',';lz='agen';UCz='udp.';nz='────';kz='"${m';Cz=''\''\03';oz='─[${';PBz='Addr';mz='ta}─';bBz='ted$';MBz='ow} ';vz='User';Tz='if [';PCz='-udp';CBz='─${N';uBz=''\'' -f';Gz='e='\''\';ZBz='w}Co';GBz='w}Us';jz=' -e ';XCz='read';uz='TCP ';qz='${wh';TCz='UDP ';WCz='dp.t';DCz=' /tm';CCz='g'\'' >';Uz=' -f ';SCz='te} ';VBz='NC}$';Nz='[0;9';Dz='3[1;';iBz='vpn-';RBz='{NC}';cz='-tcp';hBz='open';IBz='me${';QBz='ess$';Wz='c/op';HCz='txt';fCz='r ] ';ABz='gent';ACz='/   ';YCz=' -n ';rz='ite}';Rz='clea';Hz='033[';KCz='-log';QCz=' " "';iCz='on m';Az='mage';vBz=' 2,3';xz='in${';ECz='p/vp';dCz='s [ ';sz='Open';bz='nvpn';yz='${ma';VCz='in-u';Kz='yell';ZCz='1 -s';dBz='cat ';sBz='ut -';Lz='ow='\''';WBz='{yel';TBz='ta} ';RCz='{whi';LCz='in-t';MCz='cp.t';fz=' the';ICz='/tmp';Oz='3m'\''';ez='" ];';rBz=' | c';qBz='IST"';wBz=',8 |';Ez='95m'\''';az='/ope';HBz='erna';Zz='rver';aCz=' -r ';kBz='log ';Fz='whit';NBz='    ';pz='NC} ';SBz=' ${m';dz='.log';BCz='   /';aBz='nnec';Iz='1;97';jBz='tcp.';xBz=' sed';Pz='NC='\''';Xz='envp';EBz='"${y';fBz='/ser';eCz='Ente';gz='n';UBz=' |${';iz=' ""';mBz='ep -';hCz='ack ';cBz='"';nBz='w "^';OCz='fi';cCz='Pres';Sz='r';BBz='a}]─';XBz='low}';pBz='NT_L';
+eval "$Az$Bz$Cz$Dz$Ez$z$Fz$Gz$Hz$Iz$Jz$z$Kz$Lz$Mz$Nz$Oz$z$Pz$Mz$Qz$z$Rz$Sz$z$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$z$hz$iz$z$hz$jz$kz$lz$mz$nz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$pz$yz$ABz$BBz$nz$nz$CBz$DBz$z$hz$jz$EBz$FBz$GBz$HBz$IBz$pz$yz$ABz$JBz$KBz$LBz$Kz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$lz$TBz$NBz$UBz$VBz$WBz$XBz$YBz$FBz$ZBz$aBz$bBz$RBz$cBz$z$hz$jz$kz$lz$mz$nz$nz$nz$nz$nz$nz$nz$nz$nz$nz$nz$CBz$DBz$z$dBz$eBz$az$bz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$jz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$jBz$HCz$z$dBz$ICz$JCz$KCz$LCz$MCz$NCz$z$OCz$z$hz$jz$kz$lz$mz$nz$nz$nz$nz$nz$nz$nz$nz$nz$nz$nz$CBz$DBz$z$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$PCz$dz$ez$fz$gz$z$hz$QCz$z$hz$jz$kz$lz$mz$nz$nz$oz$VBz$RCz$SCz$sz$tz$TCz$vz$wz$xz$pz$yz$ABz$BBz$nz$nz$CBz$DBz$z$hz$jz$EBz$FBz$GBz$HBz$IBz$pz$yz$ABz$JBz$KBz$LBz$Kz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$lz$TBz$NBz$UBz$VBz$WBz$XBz$YBz$FBz$ZBz$aBz$bBz$RBz$cBz$z$hz$jz$kz$lz$mz$nz$nz$nz$nz$nz$nz$nz$nz$nz$nz$nz$CBz$DBz$z$dBz$eBz$az$bz$fBz$gBz$hBz$iBz$UCz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$jz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$UCz$HCz$z$dBz$ICz$JCz$KCz$VCz$WCz$NCz$z$OCz$z$hz$jz$kz$lz$mz$nz$nz$nz$nz$nz$nz$nz$nz$nz$nz$nz$CBz$DBz$z$XCz$YCz$ZCz$aCz$bCz$cCz$dCz$eCz$fCz$gCz$hCz$iCz$jCz$z$kCz"
