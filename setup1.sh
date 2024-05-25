@@ -120,7 +120,7 @@ echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}7${DARK_ORANGE}]
 wget https://raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/main/data/install_stunnel.sh >/dev/null 2>&1
 bash install_stunnel.sh >/dev/null 2>&1
 rm install_stunnel.sh >/dev/null 2>&1
-echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}9${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL FIREWALL KVM${NO_COLOR}"
+echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}9${DARK_ORANGE}]${NO_COLOR} ${LIGHT_YELLOW}INSTALL IPTABLE${NO_COLOR}"
 wget https://raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/main/data/Install_iptable.sh >/dev/null 2>&1
 bash Install_iptable.sh >/dev/null 2>&1
 rm Install_iptable.sh >/dev/null 2>&1
