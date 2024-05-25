@@ -141,10 +141,10 @@ sudo touch /etc/allport/udp >/dev/null 2>&1
 sudo touch /etc/allport/ws >/dev/null 2>&1
 sudo touch /etc/allport/ssl >/dev/null 2>&1
 
-echo 1194 >> /etc/allport/tcp >/dev/null 2>&1
-echo 2200 >> /etc/allport/udp >/dev/null 2>&1
-echo 80 >> /etc/allport/ws >/dev/null 2>&1
-echo 443 >> /etc/allport/ssl >/dev/null 2>&1
+echo '1194' >> /etc/allport/tcp >/dev/null 2>&1
+echo '2200' >> /etc/allport/udp >/dev/null 2>&1
+echo '80' >> /etc/allport/ws >/dev/null 2>&1
+echo '443' >> /etc/allport/ssl >/dev/null 2>&1
 
 echo -e "\033[1;95m──────────────────────────────────────────────────────────\033[0m"
 sleep 6
