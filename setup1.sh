@@ -128,6 +128,24 @@ echo -e "${DARK_ORANGE}                 [${NO_COLOR}${DARK_BLUE}9${DARK_ORANGE}]
 wget https://raw.githubusercontent.com/FasterExE/OVPN-Script-Classic/main/data/install_firewall_kvm.sh >/dev/null 2>&1
 bash install_firewall_kvm.sh >/dev/null 2>&1
 rm install_firewall_kvm.sh >/dev/null 2>&1
+
+sudo rm -rf /etc/allport >/dev/null 2>&1
+sudo rm /etc/allport/tcp >/dev/null 2>&1
+sudo rm /etc/allport/udp >/dev/null 2>&1
+sudo rm /etc/allport/ws >/dev/null 2>&1
+sudo rm /etc/allport/ssl >/dev/null 2>&1
+
+sudo mkdir /etc/allport >/dev/null 2>&1
+sudo touch /etc/allport/tcp >/dev/null 2>&1
+sudo touch /etc/allport/udp >/dev/null 2>&1
+sudo touch /etc/allport/ws >/dev/null 2>&1
+sudo touch /etc/allport/ssl >/dev/null 2>&1
+
+echo 1194 >> /etc/allport/tcp >/dev/null 2>&1
+echo 2200 >> /etc/allport/udp >/dev/null 2>&1
+echo 80 >> /etc/allport/ws >/dev/null 2>&1
+echo 443 >> /etc/allport/ssl >/dev/null 2>&1
+
 echo -e "\033[1;95m──────────────────────────────────────────────────────────\033[0m"
 sleep 6
 clear
